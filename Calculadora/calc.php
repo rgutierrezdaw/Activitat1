@@ -35,15 +35,15 @@ function prime(int $value):bool{
 function performOperation($operation, int $value1, int $value2=0){
     switch ($operation){
         case "sum":
-            return "El resultat és".sum($value1, $value2);
+            return "El resultat és ".sum($value1, $value2);
         break;
         case "factorial":
             return "El factorial de ".$value1." es: ".fact($value1);
         break;
         case "prime":
             if(prime($value1)==true){
-                return "El nombre es primer";
-            }else{return "El nombre no és primer";}
+                return "El nombre es primer.";
+            }else{return "El nombre no és primer.";}
         break;
     }
 }
